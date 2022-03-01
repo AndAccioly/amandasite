@@ -1,12 +1,14 @@
-
+import MenuPrincipal from "./menu/MenuPrincipal"
+import logo from "../img/sohCabecaSemFundo.png"
 
 function Header(props) {
     const classes = props.classes;
-    return <div className={classes.header}>
-            <h1>HEADER</h1>
-            <h2>LOGO</h2>
-            <h2>MENU ITENS</h2>
+    return( 
+        <div className={classes.header}>
+            <img src={logo} className={classes.logo}alt="fireSpot"/>
+            <MenuPrincipal />
         </div>
+    )
 }
 
 export default Header;
