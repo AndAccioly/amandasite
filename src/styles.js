@@ -24,7 +24,8 @@ const useStyles = makeStyles({
     },
     footer: {
         padding: '1%',
-        backgroundColor: '#f5e689',
+        backgroundColor: '#baac50',
+        display: 'flex'
     },
     
     menuLink: {
@@ -38,18 +39,28 @@ const useStyles = makeStyles({
         textAlign: 'left',
     },
     logo: {
-        width: '7%',
+        width: '9%',
         height: 'auto'
     },
     logoNome: {
-        width: '20%',
+        width: '25%',
         height: 'auto',
         marginLeft: '20px'
     },
     instaIcon: {
-        width: '2%',
+        width: '4%',
         height: 'auto',
     },
+    iconsInfo: {
+        alignItems: 'center', 
+        textAlign: 'left',
+        display: 'flex',
+        padding: '2px'
+    },
+    imgFooter: {
+        width: '50%',
+        padding: '1%'
+    }
     
     
 })
