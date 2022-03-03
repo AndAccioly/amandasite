@@ -46,8 +46,7 @@ const useStyles = makeStyles({
     },
     logoNome: {
         width: '25%',
-        height: 'auto',
-        marginLeft: '20px'
+        height: 'auto'
     },
     instaIcon: {
         width: '4%',
