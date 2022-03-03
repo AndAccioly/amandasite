@@ -1,17 +1,29 @@
 import MenuPrincipal from "./menu/MenuPrincipal"
 import logo from "../img/sohCabecaSemFundo.png"
 import logoNome from "../img/textoLogo.png"
-import Box from '@mui/material/Box';
+import Box from '@mui/material/Box'
+import Media from 'react-media'
 
 function Header(props) {
     const classes = props.classes;
     return( 
-        <div className={classes.header}>
-            <Box className={classes.logosHeader}>
-                <img src={logo} className={classes.logo} alt="logoCabeca"/>
-                <img src={logoNome} className={classes.logoNome} alt="logoTextoNome"/>
-            </Box>
-            <MenuPrincipal classes={classes}/>
+        <div>
+            <div className={classes.header}>
+                <Box className={classes.logosHeader}>
+                    <img src={logo} className={classes.logo} alt="logoCabeca"/>
+                    <img src={logoNome} className={classes.logoNome} alt="logoTextoNome"/>
+                </Box>
+                <Media queries={{ small: { maxWidth: 599 } }}>
+                    {matches =>
+                        matches.small ? (
+                        <p>Menu recolhido</p>
+                        ) : (
+                        <MenuPrincipal classes={classes}/>
+                        )
+                    }
+                    </Media>
+                
+            </div>
         </div>
     )
 }
