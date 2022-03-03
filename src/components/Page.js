@@ -11,7 +11,7 @@ function Page() {
      }, []);
     return (
         <div className={classes.root}>
-        <div className={classes.faixaTopo}></div>
+       
         <Header classes = {classes}/>
         <Body classes = {classes}/>
         <Footer classes = {classes}/>

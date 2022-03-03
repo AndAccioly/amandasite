@@ -2,13 +2,13 @@ import { makeStyles } from "@material-ui/styles"
 
 const useStyles = makeStyles({
     root: {
+        display: 'flex',
+        flexDirection: 'column',
         backgroundColor: '#f5e689',
     },
-    faixaTopo: {
-        height: '10px',
-        backgroundColor: '#f5e689',
-    },
+
     header: {
+        marginTop: '1%',
         display: 'flex',
         backgroundColor: 'white',
         justifyContent: 'space-between',
@@ -20,9 +20,11 @@ const useStyles = makeStyles({
         backgroundColor: 'white',
         paddingBottom: '50px',
         boxShadow: '0px 4px 8px -2px #888888',
+        marginTop: '1%',
         height: '800px'
     },
     footer: {
+        marginTop: '1%',
         padding: '1%',
         backgroundColor: '#baac50',
         display: 'flex'
