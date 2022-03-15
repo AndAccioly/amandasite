@@ -1,5 +1,6 @@
 import logoNomeBranco from "../img/logo-nome-branco.png"
 import instaBranco from "../img/insta-branco.png"
+import emailBranco from "../img/email-branco.png"
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
@@ -15,7 +16,7 @@ function Footer(props) {
                         <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white', paddingLeft: '2%'}}>@draamandabritto</Typography>
                     </Box>
                     <Box className = {classes.iconsInfo}>
-                        <img src={instaBranco} className={classes.instaIcon} alt="instagram"/>
+                        <img src={emailBranco} className={classes.instaIcon} alt="instagram"/>
                         <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white', paddingLeft: '2%'}}>draamandabritto@gmail.com</Typography>
                     </Box>
                 </Box>

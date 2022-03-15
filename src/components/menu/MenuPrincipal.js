@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom";
+import LinkMenu from './LinkMenu';
 
 
 
@@ -10,10 +11,10 @@ function MenuPrincipal(props) {
     return (
 
         <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center', justifyContent: 'center'}}>
-          <Link to="/home" className={classes.menuLink}><Typography sx={{ minWidth: 100, fontWeight: 'bold' }}>Início</Typography></Link>
-          <Link to="/home" className={classes.menuLink}><Typography sx={{ minWidth: 100, fontWeight: 'bold'}}>Sobre mim</Typography></Link>
-          <Link to="/home" className={classes.menuLink}><Typography sx={{ minWidth: 100, fontWeight: 'bold' }}>Artigos</Typography></Link>
-          <Link to="/home" className={classes.menuLink}><Typography sx={{ minWidth: 100, fontWeight: 'bold' }}>Agendamento</Typography></Link>
+          <LinkMenu classes={classes} texto={"Início"} url={"/home"}/>
+          <LinkMenu classes={classes} texto={"Sobre mim"} url={"/sobre-mim"}/>
+          <LinkMenu classes={classes} texto={"Artigos"} url={"/artigos"}/>
+          <LinkMenu classes={classes} texto={"Agendamento"} url={"/agendamento"}/>
         </Box>
 
     );

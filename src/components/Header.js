@@ -1,4 +1,5 @@
 import MenuPrincipal from "./menu/MenuPrincipal"
+import MenuRecolhido from "./menu/MenuRecolhido"
 import logo from "../img/sohCabecaSemFundo.png"
 import logoNome from "../img/textoLogo.png"
 import Box from '@mui/material/Box'
@@ -16,7 +17,7 @@ function Header(props) {
                 <Media queries={{ small: { maxWidth: 599 } }}>
                     {matches =>
                         matches.small ? (
-                        <p>Menu recolhido</p>
+                        <MenuRecolhido classes={classes}/>
                         ) : (
                         <MenuPrincipal classes={classes}/>
                         )

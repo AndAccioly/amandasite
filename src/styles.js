@@ -39,6 +39,7 @@ const useStyles = makeStyles({
     },
     logosHeader: {
         textAlign: 'left',
+        padding: '1% 1%'
     },
     logo: {
         width: '9%',
@@ -61,7 +62,12 @@ const useStyles = makeStyles({
     imgFooter: {
         width: '50%',
         padding: '1%'
-    }
+    },
+    menuIcon: {
+        "&:hover": {
+            fill: '#baac50'
+        }
+    },
     
     
 })
