@@ -1,6 +1,9 @@
 import { makeStyles } from "@material-ui/styles"
 
 const useStyles = makeStyles({
+    menuIconStyle: {
+        transform: 'scale(1.8)'
+    },
     root: {
         display: 'flex',
         flexDirection: 'column',
