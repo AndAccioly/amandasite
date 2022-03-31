@@ -17,7 +17,7 @@ function Footer(props) {
                     </Box>
                     <Box className = {classes.iconsInfo}>
                         <img src={emailBranco} className={classes.instaIcon} alt="instagram"/>
-                        <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white', paddingLeft: '2%'}}>draamandabritto@gmail.com</Typography>
+                        <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white', paddingLeft: '2%'}}>draamandabritto@outlook.com</Typography>
                     </Box>
                 </Box>
             </div>

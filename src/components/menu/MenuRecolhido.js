@@ -4,7 +4,6 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { styled, alpha } from '@mui/material/styles';
 import Divider from '@mui/material/Divider';
-import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@mui/material/Menu';
 
 const StyledMenu = styled((props) => (
@@ -72,7 +71,7 @@ function MenuRecolhido(props) {
           disableElevation
           onClick={handleClick}
         >
-          <MenuIcon className={classes.menuIconStyle}/>
+         menu
         </ColorButton>
         <StyledMenu
           id="menu-recolhido"
