@@ -4,16 +4,15 @@ import Footer from "./Footer"
 import useStyles from "../styles"
 import React, { useEffect } from 'react';
 
-function Page() {
+function Page(props) {
     const classes = useStyles();
     useEffect(() => {
         document.title = "Amanda Britto"
      }, []);
     return (
         <div className={classes.root}>
-       
         <Header classes = {classes}/>
-        <Body classes = {classes}/>
+        <Body classes = {classes} corpo = {props.corpo}/>
         <Footer classes = {classes}/>
         
         </div>

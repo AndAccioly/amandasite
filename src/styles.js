@@ -71,6 +71,10 @@ const useStyles = makeStyles({
             fill: '#baac50'
         }
     },
+    artigoCard: {
+        marginTop: '1%',
+        display: 'inline-block'
+    },
     
     
 })
