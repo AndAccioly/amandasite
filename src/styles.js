@@ -24,7 +24,7 @@ const useStyles = makeStyles({
         paddingBottom: '50px',
         boxShadow: '0px 4px 8px -2px #888888',
         marginTop: '1%',
-        height: '800px'
+        height: '1000px'
     },
     footer: {
         marginTop: '1%',
@@ -75,6 +75,69 @@ const useStyles = makeStyles({
         marginTop: '1%',
         display: 'inline-block'
     },
+    imagemPerfil: {
+        borderRadius: '50%',
+        width: '20%',
+    },
+    fundoPreviewSobreMim: {
+        padding: '2%',
+        backgroundColor:'#f5e689'
+    },
+    fundoPreviewArtigos: {
+        height: '350px',
+    },
+    fundoPreviewAgendamento: {
+        height: '350px',
+        backgroundColor:'#f5e689'
+    },
+    textoPreviewSobreMim: {
+        marginLeft: '5%'
+    },
+
+    agendamentoForm: {
+        display: 'inline-flex'
+    },
+    agendamentoFormItem:{
+        marginLeft: '10px',
+        '& label.Mui-focused': {
+            color: '#baac50',
+          },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: '#baac50',
+        },
+        '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+              borderColor: 'black',
+            },
+            '&:hover fieldset': {
+              borderColor: '#baac50',
+            },
+            '&.Mui-focused fieldset': {
+              borderColor: '#baac50',
+            },
+        },
+    },
+    agendamentoFormText: {
+        marginLeft: '10px',
+        '& label.Mui-focused': {
+            color: '#baac50',
+          },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: '#baac50',
+        },
+        '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+              borderColor: 'black',
+            },
+            '&:hover fieldset': {
+              borderColor: '#baac50',
+            },
+            '&.Mui-focused fieldset': {
+              borderColor: '#baac50',
+            },
+        },
+    },
+
     
     
 })
