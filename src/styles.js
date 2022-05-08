@@ -138,6 +138,16 @@ const useStyles = makeStyles({
         },
     },
 
+    grupoArtigos: {
+        display: 'flex',
+        marginBottom: '5%'
+    },
+    artigosPage: {
+        marginTop: '5%',
+        marginLeft: '15%',
+        marginRight: '15%',
+    },
+
     
     
 })
