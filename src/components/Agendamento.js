@@ -98,7 +98,7 @@ function Agendamento(props){
                         }}/>
                         <p>Autorizo que entrem em contato comigo através de Whatsapp, email ou telefone</p>
                     </Box>
-                    <BotaoAgendamento className = {classes.botaoAgendamento} variant="contained" onClick={enviarEmail}>Solicitar agendamento</BotaoAgendamento>
+                    <BotaoAgendamento onClick={enviarEmail}>Solicitar agendamento</BotaoAgendamento>
                 </Box>    
             </div>
             <Box>

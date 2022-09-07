@@ -1,5 +1,5 @@
 import Home from "./Home"
-import Artigos from "./Artigos"
+import Artigos from "./artigos/Artigos"
 import SobreMim from "./SobreMim"
 import Agendamento from "./Agendamento"
 import Artigo from "./artigos/Artigo"

@@ -9,34 +9,35 @@ import { Link } from "react-router-dom";
 
 
 function ArtigoCard(props) {
-  const classes = props.classes;
- 
-  return (
-    <Box sx={{ padding: '1%' }}>
-      <Card variant="outlined" className = {classes.artigoCard}>
-        <CardContent>
-          <Typography variant="h5" component="div">
-            Artigo template
-          </Typography>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-            18/04/2022 18:36
-          </Typography>
+    const classes = props.classes;
+    const artigo = props.artigo
 
-          <Typography variant="body2">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
-          </Typography>
-        </CardContent>
+    return (
+        <Box sx={{ padding: '1%' }}>
+            <Card variant="outlined" className={classes.artigoCard}>
+                <CardContent>
+                    <Typography variant="h5" component="div">
+                        {artigo.titulo}
+                    </Typography>
+                    <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                        {artigo.data}
+                    </Typography>
 
-        <CardActions>
-          <Link to={props.url} className={classes.menuLink}>
-            <Typography sx={{ minWidth: 100, fontWeight: 'bold' }}>Leia sobre</Typography>
-          </Link>
-        </CardActions>
-      </Card>
-      
+                    <Typography variant="body2">
+                        {artigo.conteudo}
+                    </Typography>
+                </CardContent>
 
-    </Box>
-  );
+                <CardActions>
+                    <Link to={props.url} className={classes.menuLink}>
+                        <Typography sx={{ minWidth: 100, fontWeight: 'bold' }}>Leia sobre</Typography>
+                    </Link>
+                </CardActions>
+            </Card>
+
+
+        </Box>
+    );
 }
 
 export default ArtigoCard;

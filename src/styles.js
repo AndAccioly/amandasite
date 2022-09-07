@@ -11,20 +11,20 @@ const useStyles = makeStyles({
     },
 
     header: {
-        marginTop: '1%',
         display: 'flex',
         backgroundColor: 'white',
         justifyContent: 'space-between',
-        padding: '2%',
+        paddingRight: '2%',
         boxShadow: '0px 4px 8px -2px #888888',
-       
+        position: 'fixed',
     },
     body: {
         backgroundColor: 'white',
         paddingBottom: '50px',
         boxShadow: '0px 4px 8px -2px #888888',
         marginTop: '1%',
-        height: '1000px'
+        height: '1000px',
+        marginTop:"8%"
     },
     footer: {
         marginTop: '1%',
@@ -32,7 +32,6 @@ const useStyles = makeStyles({
         backgroundColor: '#baac50',
         display: 'flex'
     },
-    
     menuLink: {
         color: 'black',
         textDecoration: 'none',
@@ -52,12 +51,14 @@ const useStyles = makeStyles({
         padding: '1% 1%'
     },
     logo: {
-        width: '9%',
-        height: 'auto'
+        width: '5%',
+        height: 'auto',
+        marginLeft: '3%'
     },
     logoNome: {
-        width: '25%',
-        height: 'auto'
+        width: '15%',
+        height: 'auto',
+        paddingLeft: '2%'
     },
     instaIcon: {
         width: '4%',

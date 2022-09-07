@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Page corpo={0}/>} />
           <Route path="home" element={<Page corpo={1}/>} />
           <Route path="artigos" element={<Page corpo={2}/>} />
-          <Route path="artigos/artigo" element={<Page corpo={21}/>} />
+          <Route path="artigos/artigo/:id" element={<Page corpo={21}/>} />
           <Route path="sobre-mim" element={<Page corpo={3}/>} />
           <Route path="agendamento" element={<Page corpo={4}/>} />
         </Routes>
