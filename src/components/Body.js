@@ -23,7 +23,7 @@ function defineCorpo(corpoId, classes){
 function Body(props) {
     const classes = props.classes;
     return (
-        <div className={classes.body}>
+        <div className={classes.wrapper}>
             {defineCorpo(props.corpo, classes)}
         </div>
     )

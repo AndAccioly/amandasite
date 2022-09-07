@@ -8,6 +8,11 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         backgroundColor: '#f5e689',
+        height: '100%',
+        minHeight: '100%',
+        position: 'absolute',
+        width: '100%',
+        minWidth: '100%'
     },
 
     header: {
@@ -17,14 +22,13 @@ const useStyles = makeStyles({
         paddingRight: '2%',
         boxShadow: '0px 4px 8px -2px #888888',
         position: 'fixed',
+        zIndex: '5',
     },
-    body: {
+    wrapper: {
         backgroundColor: 'white',
-        paddingBottom: '50px',
-        boxShadow: '0px 4px 8px -2px #888888',
-        marginTop: '1%',
-        height: '1000px',
-        marginTop:"8%"
+        boxShadow: '0px 4px 8px -4px #888888',
+        marginTop:'5%',
+        flex: '1',
     },
     footer: {
         marginTop: '1%',
@@ -85,25 +89,39 @@ const useStyles = makeStyles({
     },
     imagemPerfil: {
         borderRadius: '50%',
-        width: '20%',
+        width: '30%',
+    },
+    imagemCalendario:{
+        borderRadius: '50%',
+        width: '44%',
+        marginLeft: '5%',
     },
     fundoPreviewSobreMim: {
         padding: '2%',
-        backgroundColor:'#f5e689'
+        backgroundColor:'#f5e689',
+        display: 'flex',
     },
     fundoPreviewArtigos: {
         height: '350px',
+        display: 'flex',
     },
     fundoPreviewAgendamento: {
-        height: '350px',
-        backgroundColor:'#f5e689'
+        padding: '2%',
+        backgroundColor:'#f5e689',
+        display: 'flex',
+    },
+    fundoSobreMim:{
+        backgroundColor:'#f5e689',
+        height: '1000px'
     },
     textoPreviewSobreMim: {
-        marginLeft: '5%'
+        marginLeft: '5%',
+        display: 'flex',
     },
 
     agendamentoForm: {
-        display: 'inline-flex'
+        display: 'inline-flex',
+        marginTop: '4%'
     },
     agendamentoFormItem:{
         marginLeft: '10px',
