@@ -40,6 +40,13 @@ const useStyles = makeStyles({
             color: '#baac50'
         }
     },
+    footerLink: {
+        color: 'white',
+        textDecoration: 'none',
+        "&:hover": {
+            color: 'black'
+        }
+    },
     logosHeader: {
         textAlign: 'left',
         padding: '1% 1%'

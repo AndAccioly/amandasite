@@ -3,6 +3,7 @@ import instaBranco from "../img/insta-branco.png"
 import emailBranco from "../img/email-branco.png"
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import LinkFooter from './menu/LinkFooter'
 
 function Footer(props) {
     const classes = props.classes;
@@ -22,10 +23,11 @@ function Footer(props) {
                 </Box>
             </div>
             <Box sx={{ alignItems: 'center', textAlign: 'left', padding: '1%'}}>
-                <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white' }}>Início</Typography>
-                <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white' }}>Sobre mim</Typography>
-                <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white' }}>Artigos</Typography>
-                <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white' }}>Agendamento</Typography>
+                
+                <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white' }}><LinkFooter classes={classes} texto={"Início"} url={"/home"}/></Typography>
+                <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white' }}><LinkFooter classes={classes} texto={"Sobre mim"} url={"/sobre-mim"}/></Typography>
+                <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white' }}><LinkFooter classes={classes} texto={"Artigos"} url={"/artigos"}/></Typography>
+                <Typography sx={{ minWidth: 100, fontWeight: 'bold', color: 'white' }}><LinkFooter classes={classes} texto={"Agendamento"} url={"/agendamento"}/></Typography>
             </Box>        
         </div>
     )
